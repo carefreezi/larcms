@@ -1,0 +1,28 @@
+.cover-img-center-max {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.cover-img-center-max img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.cover-img-center-max a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.text-hd {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cms-boxsha {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
+}

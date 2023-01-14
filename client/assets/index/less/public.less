@@ -1,0 +1,457 @@
+@import "config.less";
+
+body {
+  background: @backgroud-color;
+}
+
+header {
+  background: white;
+  height: @headerH;
+  line-height: @headerH;
+}
+
+.main {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.meunlist .meun {
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.meunlist > div {
+  float: left;
+  box-sizing: border-box;
+}
+
+.meunlist .logo {
+  width: 150px;
+}
+
+.meunlist > div {
+  max-height: @headerH;
+}
+
+.meunlist .logoi {
+  font-size: 50px;
+  max-width: 100%;
+  max-height: @headerH;
+  display: inline-block;
+  margin-top: -6px;
+}
+
+.meun {
+  width: 50%;
+}
+
+.meun > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.meun > ul > li {
+  float: left;
+  box-sizing: border-box;
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.fontcolor a {
+  color: @font-color;
+  text-decoration: none;
+}
+
+.meunlist .logo a {
+  max-height: @headerH;
+  display: inline-block;
+
+}
+
+.meun .active {
+  color: @theme-color
+}
+
+.formsearch {
+  display: flex;
+  align-items: center;
+  height: @headerH;
+  width: 258px;
+  position: relative;
+}
+
+.formsearch .input-group {
+  border: 2px solid #DDDCE3;
+  border-radius: 15px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.formsearch .input-group-text {
+  background: transparent;
+  border: none;
+  padding-right: 0;
+}
+
+.formsearch .iinputres {
+  background: transparent;
+  border: none;
+  outline: none !important;
+  .text-cnter-itm(44px);
+}
+
+.iinputres:focus {
+  outline: none !important;
+  webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.vipfit {
+  color: @waring-color;
+}
+
+.tipsvip {
+  position: absolute;
+  top: -2.2rem;
+  right: 1px;
+}
+
+.tipsvip a {
+  color: #9B560F;
+  font-size: 12px;
+}
+
+header .userBox {
+  float: right;
+  color: @font-color;
+  width: 258px;
+}
+
+body {
+  min-width: 1400px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+footer .footerTop {
+  background: @footer-color;
+  color: @footer-font-color;
+  height: 288px;
+}
+
+footer .footerTop .main {
+  padding: 20px 0;
+}
+
+footer .footerTop .tit-footer {
+  height: 28px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(85, 85, 109, 1);
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+footer .footerTop .desc-footer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+footer .footerTop .desc-footer a {
+  color: @footer-font-color;
+  line-height: 27px;
+}
+
+footer .footerTop .footerIocnbox > div {
+  float: left;
+  width: 40%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer .footerTop .footerIocnbox > div:first-child {
+  margin-left: -1.1rem;
+}
+
+footer .footerTop .footerIocnbox .wbi {
+  font-size: 40px;
+}
+
+footer .footerTop .footerIocnbox .wxi {
+  font-size: 35px;
+}
+
+footer .footerTop .footerIocnbox > div > div {
+  height: 50px;
+  line-height: 50px;
+}
+
+footer .footerTop .vippeorbox {
+  font-size: 12px;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+footer .footerTop .vippeorbox .vipcount {
+  color: #008EFF;
+  font-size: 35px;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+footer .footerTop .vippeorbox .vipcountbox {
+  margin-top: -10px;
+}
+
+footer .footerTop .qunjion {
+  font-size: 12px;
+}
+
+footer .tipsqqmsg {
+  margin-bottom: 5px;
+}
+
+footer .joingroup .btn-secondary {
+  background: transparent;
+  border-radius: 14px;
+  color: @footer-font-color;
+  font-size: 12px;
+  min-width: 9rem;
+  border: 2px solid;
+}
+
+footer .footerBottom {
+  background: @footer-color-bottom;
+  color: @footer-font-color-bottom;
+  height: 94px;
+}
+
+footer .footerBottom .main {
+  padding: 24px 0 0 0;
+  font-size: 12px;
+}
+
+footer .footerBottom .main .fLink a {
+  color: @footer-font-color-bottom;
+}
+
+footer .footerBottom .main .fLink > span {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: @theme-color !important;
+}
+
+footer .footerBottom .main .Copyright {
+  margin-top: .5rem;
+}
+
+section[main] {
+  min-height: ~"calc(100vh - 545px)";
+}
+
+.child-list {
+  position: relative;;
+}
+
+.child-list .icon-xiala {
+  font-size: 12px;
+  color: @hover-color-gary;
+  font-weight: 300;
+  .cms-anim();
+  display: inline-block;
+}
+
+.child-list dl {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  background: #ffffff;
+  .cms-boxsha;
+  font-size: 13px;
+  z-index: 20;
+  white-space: nowrap;
+  text-align: left;
+  border-radius: 3px;
+  overflow: hidden;
+  max-height: 0;
+  .cms-anim(.25s);
+}
+
+.child-list dl dd {
+  line-height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+  min-width: 5.5rem;
+  display: block;
+}
+
+.child-list dl dd a {
+  display: block;
+}
+
+.child-list dl dd:hover {
+  background: @hover-color-gary;
+}
+
+.child-list:hover > dl {
+  max-height: 600px;
+}
+
+.child-list:hover .icon-xiala {
+  transform: rotate(180deg);
+  color: @backgroud-gary-color;
+}
+
+.meun > ul > li > a:hover {
+  color: @theme-color;
+}
+
+.userBox .noLoginBox {
+  text-align: right;
+}
+
+.userBox .noLoginBox span {
+  background: rgb(233, 233, 235);
+  color: #909399;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.userBox .userBoxImagesG {
+  float: right;
+  width: 100%;
+  padding: 0 18px;
+  .cms-boxsha;
+  position: relative;
+}
+
+.userBox .userBoxImagesG a > div {
+  box-sizing: border-box;
+  float: left;
+}
+
+.userBox .userBoxImagesG a > div:first-child {
+  width: 55px;
+}
+
+.userBox .userBoxImagesG a > div:nth-child(2) {
+  width: ~"calc(100% - 55px - 1.3rem)";
+  text-align: left;
+  white-space: nowrap;
+}
+
+.userBox .userBoxImagesG a > div:nth-child(3) {
+  width: 1.3rem;
+  text-align: right;
+}
+
+.userBox .userBoxImagesG .userI {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.userBox .boxUserDesc {
+  height: 50%;
+  line-height: normal;
+  margin-top: 2.4rem;
+}
+
+.userBox .vipMS {
+  font-size: 13px;
+}
+.userBox .vipMS .icon-vip-crown--fill{
+  font-size: 14px!important;
+}
+.userBox .user-h-nick {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.userBoxImagesG .icon-xiala {
+  color: @hover-color-gary;
+  font-size: 12px;
+}
+
+.userBoxImagesG .icon-vip-crown--fill {
+  font-size: 12px !important;
+}
+
+.userBoxImagesG .accutMS {
+  font-size: 14px;
+}
+
+.userBoxImagesG .accutMS .iconfont {
+  color: @font-tips-color;
+}
+
+.iconsvg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.userBoxImagesG .iconsvg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.userBoxImagesG .userpicT {
+  position: relative;
+}
+
+.userBoxImagesG .userpicT .vipi {
+  display: inline-block;
+  position: absolute;
+  left: ~"calc( (100% - 28px) / 2)";
+  top: -30px;
+  z-index: 0;
+}
+
+.userBoxImagesG .userpicT .vipi .icon-vip-crown--fill {
+  font-size: 25px !important;
+}
+
+.userBoxImagesG .loginOutBtn {
+  border-radius: 3px;
+  cursor: pointer;
+  background: #f2dede;
+  color: red;
+  overflow: hidden;
+  transition: all ease .3s;
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  width: 4.5rem;
+  left: ~"calc( (100% - 4.5rem) / 2)";
+  text-align: center;
+  line-height: 25px;
+  height: 0;
+}
+
+.userBoxImagesG:hover .loginOutBtn {
+  height: 25px;
+}
+
+.child-list.isLoginbox dl {
+  width: 100%;
+  top: @headerH;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

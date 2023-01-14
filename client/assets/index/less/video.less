@@ -1,0 +1,367 @@
+@import "config.less";
+
+.boxTop {
+  padding: 42px 0 0 0;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  height: 240px;
+  border-top: 2px solid @backgroud-color;
+}
+
+.boxTop .ListTit {
+  font-size: 40px;
+  color: @font-color;
+}
+
+.boxTop .badge {
+  font-size: 12px;
+  vertical-align: text-top;
+}
+
+.boxTop .topshowbox {
+  height: 112px;
+}
+
+.boxTop .ListTitTips {
+  color: @font-tips-color;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.tipsTopImg {
+  height: 96px;
+  width: 600px;
+  display: block !important;
+  border-radius: 14px;
+}
+
+.tipsTopImgbox {
+  padding: 0;
+  border: none;
+  height: 96px;
+  width: 600px;
+  float: right;
+  background: transparent;
+
+}
+
+.tipsTopImgbox .close {
+  right: -2px;
+  top: -8px;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  background: #FFFFFF;
+  border-radius: 100%;
+  font-size: 12px;
+  color: #000000;
+  box-shadow: 1px 4px 7px #ccc;
+  -webkit-box-shadow: 1px 4px 7px #ccc;
+  opacity: 1;
+}
+
+.CheckBoxM {
+  margin-top: 1rem;
+}
+
+.CheckBoxM .btn-secondary {
+  background: transparent;
+  border-radius: 14px;
+  color: @font-color;
+  font-weight: bolder;
+  font-size: 12px;
+  border: 1px solid #B6B6CB;
+}
+
+.CheckBoxM .dropdown {
+  display: inline-block;
+  margin-right: 1.35rem;
+}
+
+
+.CheckBoxM .dropdown:last-child {
+  margin-right: 0;
+}
+
+.rankorderbox {
+  text-align: right;
+  color: @font-color;
+  font-weight: bolder;
+  font-size: 14px;
+  margin-top: .5rem;
+}
+
+.rankorderbox > span {
+  margin-right: 1.35rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.rankorderbox > span:last-child {
+  margin-right: 0;
+}
+
+.rankorderbox > span.active:before {
+  width: 1.2rem;
+}
+
+.rankorderbox > span:before {
+  position: absolute;
+  content: '';
+  background: @theme-color;
+  width: 0;
+  height: 3px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -7px;
+  transition: all 500ms ease;
+  -webkit-mask-image: ~"linear-gradient(-75deg, rgba(244, 55, 55, 0.24) 50%, #f43737 50%, rgba(0, 0, 0, 1) 70%)";
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+
+.video-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.video-list li {
+  list-style: none;
+  float: left;
+  border-radius: 14px;
+  width: ~'calc((100% - ( 20px * 3 )) / 4)';
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.code-list li:hover, .box-list li:hover {
+  -webkit-box-shadow: 0 34px 20px -24px rgba(136, 161, 206, 0.3);
+  box-shadow: 0 34px 20px -24px rgba(136, 161, 206, 0.3);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+}
+
+.video-list > li:nth-child(4n) {
+  margin-right: 0;
+
+}
+
+.video-list .video-gif-box {
+  height: 185px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-voer-img {
+  height: 185px;
+  transition: all ease 300ms;
+  width: 100%;
+}
+
+.video-list .video-gif-box video {
+  width: 100%;
+  height: 100%;
+}
+
+.video-tit {
+  .text-hd;
+  font-size: 14px;
+  color: @font-color;
+  margin-top: 10px;
+  font-weight: bolder;
+  padding: 0 1rem;
+}
+
+.video-tit a {
+  color: @font-color;
+}
+
+.video-tit a:hover {
+  text-decoration: none;
+}
+
+.toolbar-desc {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .4); /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, .01), rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .01), rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: all ease 300ms;
+  height: 60px;
+  overflow: hidden;
+}
+
+.toolbar-desc .tag-span-tool {
+  color: #F7F7F7;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.toolbar-desc .desc-li {
+  font-size: 12px;
+  color: @backgroud-gary-color;
+  padding: 0 10px;
+  height: 27px;
+  line-height: 27px;
+}
+
+.toolbar-desc .desc-li i {
+  font-size: 12px;
+}
+
+.toolbar-desc .desc-li .munsrcoe {
+  font-size: 12px;
+}
+
+.toolbar-desc .desc-li .cont-bar {
+  padding-right: 0;
+}
+
+.toolbar-desc .desc-li .cont-bar > span {
+  margin-right: 5px;
+  display: inline-block;
+  min-width: 50px;
+}
+
+.toolbar-desc .desc-li .vip-desc {
+  text-align: right;
+  padding-left: 0;
+}
+
+.video-gif-box:hover .toolbar-desc {
+  height: 0;
+}
+
+.tag-span-tool {
+  color: @backgroud-gary-color;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.tag-span-tool > span::after {
+  content: '/';
+  margin: 0 5px;
+}
+
+.tag-span-tool > span:last-child::after {
+  display: none;
+}
+
+.box-list .desc-li {
+  margin-top: 20px;
+  font-size: 12px;
+  color: @backgroud-gary-color;
+  height: 27px;
+  line-height: 27px;
+}
+
+.box-list .desc-li i {
+  font-size: 12px;
+}
+
+.box-list .desc-li .cont-bar {
+  padding-right: 0;
+}
+
+.box-list .desc-li .cont-bar > span {
+  margin-right: 5px;
+  display: inline-block;
+  min-width: 50px;
+}
+
+.box-list .desc-li .vip-desc {
+  text-align: right;
+  padding-left: 0;
+}
+
+.downi i {
+  font-size: 20px !important;
+  color: @backgroud-gary-color;
+}
+
+.vipi i {
+  font-size: 20px !important;
+  color: @waring-color;
+}
+
+.disi {
+  background: rgba(255, 101, 94, .08);
+  padding: 1px 5px;
+  border-radius: 14px;
+}
+
+.disi i {
+  font-size: 12px !important;
+  color: @danger-color;
+}
+
+.disi .dis-num {
+  font-size: 12px;
+  color: @danger-color;
+}
+
+.munsrcoe {
+  color: @danger-color;
+  font-size: 14px;
+  margin-right: 2px;
+  font-weight: bolder;
+}
+
+.box-list li {
+  transition: ease all 300ms;
+}
+
+.box-list li:hover {
+  -webkit-box-shadow: 0 34px 20px -24px rgba(136, 161, 206, 0.3);
+  box-shadow: 0 34px 20px -24px rgba(136, 161, 206, 0.3);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+}
+
+.video-gif-box:hover .video-voer-img {
+  height: 0;
+  overflow: hidden;
+}
+/*主题重写*/
+
+.boxTop .badge.badge-primary {
+  background: @danger-color;
+}
+
+.meun .active {
+  color: @danger-color;
+}
+
+.rankorderbox > span:before {
+  background: @danger-color;
+}
+
+footer .footerTop .vippeorbox .vipcount {
+  color: @danger-color;
+}

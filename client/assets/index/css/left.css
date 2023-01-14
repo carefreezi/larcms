@@ -1,0 +1,76 @@
+/*left code css*/
+.tk-box {
+    display: block;
+}
+
+.tk-box dl {
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0px;
+    font-size: 14px
+}
+
+.tk-box dl:last-child {
+    border: none;
+}
+
+.tk-box dt, .tk-box dd {
+    display: block;
+    
+}
+
+.tk-box dd {
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.tk-box dt {
+    padding-left: 25px;
+    line-height: 30px;
+    color: #a0a0a0;
+    font-weight: 400;
+}
+
+.tk-box dd a {
+    display: block;
+    color: #666
+}
+
+.tk-box dd:hover {
+    background-color: #f9f9f9;
+}
+
+.tk-box dd i {
+    margin: 0px 6px 0 18px;
+    float: left;
+    display: inline;
+    font-size: 21px;
+}
+
+.tk-box dd em.red-dot {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #d93821;
+    display: block;
+}
+
+.tk-box dd.this {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 0px 10px 0px 7px;
+    position: relative;
+    border-left: 3px solid #008EFF;
+}
+
+.tk-box dd.this a {
+    color: #008EFF;
+}
+
