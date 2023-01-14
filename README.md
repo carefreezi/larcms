@@ -1,4 +1,3 @@
-![输入图片说明]
 <div align="center" >
     <img src="https://epmao.oss-cn-beijing.aliyuncs.com/202104/26/HiKOqiOudQmco3ddOUizlfSDI6UsDK8hvSBovclv.png" />
 </div>
@@ -19,7 +18,7 @@
 </div>
 
 ### 介绍
-LARCMS历经1年完善，前端后端分离全部100%开源，采用会员制度下载付费，集成支付宝微信等支付系统。
+LARCMS历经1年完善，使用NUXT2+Laravel8前端后端分离全部100%开源，采用会员制度下载付费，集成支付宝微信等支付系统。
 
 
 ### 系统亮点
@@ -69,7 +68,7 @@ Redis
 
 ### 感谢参与开发者
 
-欢迎反馈问题 [反馈问题](https://gitee.com/ZhongBangKeJi/LARCMS/issues)。
+欢迎反馈问题 [反馈问题](https://github.com/a869375583/larcms/issues)。
 
 ### 使用须知
 
